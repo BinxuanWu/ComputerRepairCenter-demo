@@ -22,14 +22,28 @@
     <body>
         <div class = "container-fluid">
             <!-- Title-->
-            <a href="index.html" style="text-decoration:none">
-                <div class = "title"> 
-                    <h1><strong>Computer Repair Center</strong></h1>
+            <div class="row">
+                <div class="col-md-1" >
+                    <img src="images/logo.png" style="width:90px; height:80px;">
                 </div>
-            </a>
+                <div class="col-md-8">
+                    <a href="index.html" style="text-decoration:none">
+                        <div class = "title"> 
+                        <h1 style="display:inline-block;"><strong>Computer Repair Center</strong>
+                        </h1>   &nbsp; &nbsp;<big>faster & friendly </big>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
             <!-- Header -->
-            <nav class="navbar navbar-expand-lg" role="navigation" style="margin-bottom:0px; padding-bottom:0px">
+            <nav class="navbar navbar-expand-lg navb" role="navigation" 
+                style="
+                    margin-bottom:0px;
+                    padding-bottom:0px; 
+                    padding-top: 0px; 
+                    background-color: PaleTurquoise;"
+                >
                 <div class="container-fluid" ">
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -66,9 +80,70 @@
             <hr style="margin-top:0px;"/>
 
             <h2 style="color: DarkSlateGray; font-weight: bold;"> Our Team </h2>
-            <hr style="width:500px">
+            <hr style="width:700px">
 
-            <div class="row container-fluid">
+            <div class="row container-fluid" >
+                <div class="col">
+                    <div class="row">
+                        <div class="card offset-md-2 col-md-8" style="text-align: center; height: 450px; background-color:	LightCyan">
+                            <div class="card-header">
+                                <div class="photo"> 
+                                    <img src="images/exp1.jpg">
+                                </div>
+                                <h3 class="card-title"> Sam </h3>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text exp_intro">Rate: <strong>★4.8</strong></p>
+                                <p class="card-text exp_intro" style="margin-bottom:1rem">Number of Rapairs: <strong>1932</strong></p>
+                                <p class="card-text exp_intro"><strong>Good at : </strong><i> Data Recovery; Diagnostic Testing; PC Tuneup</i></p>
+
+                            </div> 
+                            <div class="card-footer">底部</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <div class="card offset-md-2 col-md-8" style="text-align: center; height: 450px; background-color:	LightCyan">
+                            <div class="card-header">
+                                <div class="photo"> 
+                                    <img src="images/exp2.jpg">
+                                </div>
+                                <h3 class="card-title"> John </h3>
+                            </div>
+                            <div class="card-body exp_intro">
+                                <p class="card-text exp_intro">Rate: <strong>★4.7</strong></p>
+                                <p class="card-text exp_intro" style="margin-bottom:1rem">Number of Rapairs: <strong>1420</strong></p>
+                                <p class="card-text exp_intro"><strong>Good at : </strong><i> Laptop Hardware Repair; Virus Removal</i></p></div> 
+                            <div class="card-footer">底部</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="row">
+                        <div class="card offset-md-2 col-md-8" style="text-align: center; height: 450px; background-color:	LightCyan">
+                            <div class="card-header" >
+                                <div class="photo"> 
+                                    <img src="images/exp3.jpg">
+                                </div>
+                                <h3 class="card-title"> Alice </h3>
+                            </div>
+                            <div class="card-body exp_intro">
+                                <p class="card-text exp_intro">Rate: <strong>★4.9</strong></p>
+                                <p class="card-text exp_intro" style="margin-bottom:1rem">Number of Rapairs: <strong>1602</strong></p>
+                                <p class="card-text exp_intro"><strong>Good at : </strong><i> PC Tuneup; Laptop Hardware Repair</i></p>
+                            </div> 
+                             
+                            <div class="card-footer">底部</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+                        <!-- <div class="row container-fluid">
                 <div class = "col-md-3" style="display:flex;">
                     <div class="photo"> 
                         <img src="images/exp1.jpg">
@@ -79,7 +154,7 @@
                     <div>
                         <div class="left_triangle"></div>
                         <div class="expIntro_left">
-                            <h3>Sam --------------- Rate: 4.8 ;   Number of Rapairs: 1456</h3>
+                            <h3>Sam --------------- Rate: ★4.8 ;   Number of Rapairs: 1456</h3>
                             <p>
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -98,12 +173,12 @@
 
             <hr>
 
-            <div class="row container-fluid">
+            <div class="row container-fluid" >
                 <div class = "col-md-7 offset-md-2" style="display:flex">
                     
         
                         <div class="expIntro_right">
-                            <h3> John --------------- Rate: 5.0 ;  Number of Rapairs: 2450</h3>
+                            <h3> John --------------- Rate: ★5.0 ;  Number of Rapairs: 2450</h3>
                             <p>
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -139,7 +214,7 @@
                     <div>
                         <div class="left_triangle"></div>
                         <div class="expIntro_left">
-                        <h3> Alice --------------- Rate: 4.9 ;  Number of Rapairs: 1932</h3>
+                        <h3> Alice --------------- Rate: ★4.9 ;  Number of Rapairs: 1932</h3>
                             <p>
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
                                 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -154,7 +229,8 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
+            
 
         </div>
         
