@@ -7,45 +7,11 @@
     border-radius: 50%;
 }
 
-
-
-.expIntro_left {
-    background-color: AliceBlue;
-    border-radius: 7px;
-    width: 800px;
-    height: 180px;
+.cardst{
+    text-align: center; 
+    height: 450px; 
+    background-color:rgb(200, 251, 238) !important;
 }
-
-.left_triangle{
-    height:0px;  
-    width:0px;  
-    border-width:8px;  
-    border-style:solid;  
-    border-color:transparent AliceBlue transparent transparent;  
-    position: relative;
-    left:-16px;
-    top: 50%;
-
-}
-
-.expIntro_right {
-    text-align: right;
-    background-color: Ivory;
-    border-radius: 7px;
-    width: 800px;
-    height: 180px;
-}
-
-.right_triangle{
-    height:0px;  
-    width:0px;  
-    border-width:8px;  
-    border-style:solid;  
-    border-color:transparent transparent transparent Ivory;  
-    position: relative;
-    top:50%;
-}
-
 
 .exp_intro {
     color: #666666;

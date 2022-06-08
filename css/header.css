@@ -1,7 +1,7 @@
 .title {
     font-family:Lucida Calligraphy, cursive, serif;
     color:DarkSlateGray;
-    text-shadow: 4px 3px 4px aliceblue;
+    text-shadow: 4px 3px 6px aliceblue;
 }
 
 .currentPageBtn {
@@ -18,7 +18,7 @@
 }
 
 .otherPageBtn {
-    background-color: lightcyan;
+    background-color: rgb(191, 252, 230);
     color: grey;
     font-size: larger;
     width: 200px;
@@ -31,8 +31,9 @@
 .bookBtn {
     font-family: Comic Sans MS ;
     border-radius: 20px;
-    background-color: skyblue;
-    color: 	#FF6347;
+    background: rgba(50, 226, 214, 0.8);
+    color: 	hotpink;
+    text-shadow: 4px 3px 4px rgb(247, 223, 250);
     font-style: italic;  
     font-size: 30px;
     font-weight:1000;
