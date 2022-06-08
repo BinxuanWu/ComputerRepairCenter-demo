@@ -17,9 +17,21 @@
     border-radius: 5px;
 }
 
+
 .otherPageBtn {
     background-color: rgb(191, 252, 230);
     color: grey;
+    font-size: larger;
+    width: 200px;
+    padding: 15px 30px 15px 30px;
+    border-color: DeepSkyBlue;
+    border-width: 3px;
+    border-radius: 5px;
+}
+
+.otherPageBtn:hover{
+    background-color: rgb(188, 243, 223);
+    color: 	white;
     font-size: larger;
     width: 200px;
     padding: 15px 30px 15px 30px;
@@ -33,6 +45,21 @@
     border-radius: 20px;
     background: rgba(50, 226, 214, 0.8);
     color: 	hotpink;
+    text-shadow: 4px 3px 4px rgb(247, 223, 250);
+    font-style: italic;  
+    font-size: 30px;
+    font-weight:1000;
+    width: 250px;
+    padding: 8px 30px 8px 30px;
+    border-color: DeepSkyBlue;
+    border-width: 3px;
+}
+
+.bookBtn:hover {
+    font-family: Comic Sans MS ;
+    border-radius: 20px;
+    background: rgba(102, 228, 220, 0.8);
+    color: 	white;
     text-shadow: 4px 3px 4px rgb(247, 223, 250);
     font-style: italic;  
     font-size: 30px;
