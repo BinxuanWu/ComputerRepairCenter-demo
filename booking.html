@@ -88,7 +88,7 @@
                     <div class="form-gourp row infoBlock">
                         <label for="username" class="col-sm-2 col-form-label info">Name</label>
                         <div class = "col-sm-4">
-                            <input type="text" class="form-control form-control-sm" id="username"  placeholder="Enter name">
+                            <input type="text" class="form-control form-control-sm" id="username"  placeholder="Enter name" required>
                         </div>
                     </div>
 
@@ -123,9 +123,9 @@
                         <div class = "col-sm-4">
                             <select class="form-control form-control-sm" id="store">\
                                 <option value=""> Choose...</option>
-                                <option value="1">Ottawa</option>
-                                <option value="2">Toronto</option>
-                                <option value="3">Montreal</option>
+                                <option >Ottawa</option>
+                                <option >Toronto</option>
+                                <option >Montreal</option>
                             </select>    
                         </div>
                     </div>
@@ -135,9 +135,21 @@
                         <div class = "col-sm-4">
                             <select class="form-control form-control-sm" id="expert">\
                                 <option value=""> Choose...</option>
-                                <option value="1">Sam</option>
-                                <option value="2">John</option>
-                                <option value="3">Alice</option>
+                                <option ">Sam</option>
+                                <option >John</option>
+                                <option >Alice</option>
+                            </select>    
+                        </div>
+                    </div>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="approach" class="col-sm-2 col-form-label info">Service Approach</label>
+                        <div class = "col-sm-4">
+                            <select class="form-control form-control-sm" id="approach">\
+                                <option > In Store </option>
+                                <option > Delivery </option>
+                                <option > Door-to-Door </option>
+                                
                             </select>    
                         </div>
                     </div>
@@ -171,7 +183,7 @@
                         <button type="submit" class="btn btn-info book" id="book" > Book</button>
                     </div>
 
-                
+            
                 
 
             </div>
@@ -233,7 +245,6 @@
                 price.value = "$ 10.00"
                 esttime.innerHTML = "1 Hour";
                 esttime.value = "1 Hour";
-                
                 break;
         }
     }
@@ -249,6 +260,7 @@
                 service = document.getElementById("service");
                 store = document.getElementById("store");
                 expert = document.getElementById("expert");
+                approach = document.getElementById("approach");
                 date = document.getElementById("date");
                 time = document.getElementById("time");
                 price = document.getElementById("price");
@@ -260,6 +272,7 @@
                 "\n    Service:   "+ service.value +
                 "\n    Store:     "+ store.value +
                 "\n    Expert:    "+ expert.value +
+                "\n    Approach:    "+ approach.value +
                 "\n    Date:      "+ date.value +
                 "\n    Time:      "+ time.value +
                 "\n    Price:      "+ price.value +
