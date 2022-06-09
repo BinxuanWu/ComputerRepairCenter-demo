@@ -3,7 +3,7 @@
 <html>
     <head>
        <meta charset="utf-8">
-       <title>Location</title> 
+       <title>Booking</title> 
        <style type="text/css">
            body {
             background-image: url(images/bk3.jpg); 
@@ -13,10 +13,11 @@
        </style>
 
        <link href="css/header.css" rel="stylesheet">
-
+       <link href="css/booking.css" rel="stylesheet">
        <!-- BootStrap -->
        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script> -->
     </head>
@@ -38,7 +39,7 @@
                 </div>
             </div>
             
-            
+
 
             <!-- Header -->
             <nav class="navbar navbar-expand-lg navb" role="navigation" 
@@ -79,11 +80,197 @@
 
             <hr style="margin-top:0px;"/>
 
+            <div class="container">
+            <div id="feedback"></div>
+                
+                    <h5 class="subInfo"> <strong> Contact Information </strong></h5>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="username" class="col-sm-2 col-form-label info">Name</label>
+                        <div class = "col-sm-4">
+                            <input type="text" class="form-control form-control-sm" id="username"  placeholder="Enter name">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="email" class="col-sm-2 col-form-label info">Email Address</label>
+                        <div class="col-sm-4">
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter Email">
+                        </div>
+                    </div>
+
+                    <hr width="800">
+
+                    <h5 class="subInfo"> <strong> Service </strong></h5>
+                    <div class="form-gourp row infoBlock">
+                        <label for="service" class="col-sm-2 col-form-label info">Service</label>
+                        <div class = "col-sm-4">
+                            <select class="form-control form-control-sm" id="service">
+                                <option value=""> Choose...</option>
+                                <option >Complete Tune Up</option>
+                                <option >Diagnostic Testing</option>
+                                <option >Laptop Hardware Repair</option>
+                                <option >Data Recovery</option>
+                                <option >Virus Removal</option>
+                                <option >Operating System Formatting</option>
+                                <option >Software Installation</option>
+                            </select>    
+                        </div>
+                    </div>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="store" class="col-sm-2 col-form-label info">Store</label>
+                        <div class = "col-sm-4">
+                            <select class="form-control form-control-sm" id="store">\
+                                <option value=""> Choose...</option>
+                                <option value="1">Ottawa</option>
+                                <option value="2">Toronto</option>
+                                <option value="3">Montreal</option>
+                            </select>    
+                        </div>
+                    </div>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="expert" class="col-sm-2 col-form-label info">Expert</label>
+                        <div class = "col-sm-4">
+                            <select class="form-control form-control-sm" id="expert">\
+                                <option value=""> Choose...</option>
+                                <option value="1">Sam</option>
+                                <option value="2">John</option>
+                                <option value="3">Alice</option>
+                            </select>    
+                        </div>
+                    </div>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="date" class="col-sm-2 col-form-label info">Date</label>
+                        <div class = "col-sm-4">
+                            <input type="date" class="form-control form-control-sm" id="date">
+                        </div>
+                    </div>
+
+                    <div class="form-gourp row infoBlock">
+                        <label for="time" class="col-sm-2 col-form-label info">Time</label>
+                        <div class = "col-sm-4">
+                            <input type="time" class="form-control form-control-sm" id="time">
+                        </div>
+                    </div>
+
+                    <hr width="1000">
+                    <div class="col-sm-7 d-flex justify-content-between" >
+                        <h5 class="price">Cost: </h5>
+                        <h5 class="price" id = "price">$ XXX.XX</h5>
+                    </div>
+                    <div class="col-sm-7 d-flex justify-content-between" >
+                        <h5 class="price">Estimate time: </h5>
+                        <h5 class="price" id = "esttime">XXX Days</h5>
+                    </div>
+
+                    <div class="col-sm-7 d-flex justify-content-between ">
+                        <button type="submit" class="btn btn-info book" id="cal" > Calculate</button>
+                        <button type="submit" class="btn btn-info book" id="book" > Book</button>
+                    </div>
+
+                
+                
+
+            </div>
             
 
         </div>
         
-
        
+       
+
     </body>
 </html>
+
+<script>
+    document.getElementById("cal").onclick = function() {
+        service = document.getElementById("service");
+        price = document.getElementById("price");
+        esttime = document.getElementById("esttime");
+        
+        switch (service.value) {
+            case "Complete Tune Up": 
+                price.innerHTML = "$ 150.00";
+                price.value = "$ 150.00"
+                esttime.innerHTML = "3 Days";
+                esttime.value = "3 Days";
+                break;
+            case "Diagnostic Testing": 
+                price.innerHTML = "$ 120.00";
+                price.value = "$ 210.00"
+                esttime.innerHTML = "2 Days";
+                esttime.value = "2 Days";
+                break;
+            case "Laptop Hardware Repair": 
+                price.innerHTML = "$ 130.00";
+                price.value = "$ 130.00"
+                esttime.innerHTML = "4 Days";
+                esttime.value = "4 Days";
+                break;
+            case "Data Recovery": 
+                price.innerHTML = "$ 75.00";
+                price.value = "$ 75.00"
+                esttime.innerHTML = "1 Days";
+                esttime.value = "1 Days";
+                break;
+            case "Virus Removal": 
+                price.innerHTML = "$ 110.00";
+                price.value = "$ 110.00"
+                esttime.innerHTML = "2 Days";
+                esttime.value = "2 Days";
+                break;
+            case "Operating System Formatting": 
+                price.innerHTML = "$ 20.00";
+                price.value = "$ 20.00"
+                esttime.innerHTML = "3 Hour";
+                esttime.value = "3 Hour";
+                break;
+            case "Software Installation": 
+                price.innerHTML = "$ 10.00";
+                price.value = "$ 10.00"
+                esttime.innerHTML = "1 Hour";
+                esttime.value = "1 Hour";
+                
+                break;
+        }
+    }
+</script>
+
+
+<script type="text/javascript">
+            bookBtn = document.getElementById("book");
+            feedback = document.getElementById("feedback");
+            bookBtn.onclick = function() {
+                username = document.getElementById("username");
+                email = document.getElementById("email");
+                service = document.getElementById("service");
+                store = document.getElementById("store");
+                expert = document.getElementById("expert");
+                date = document.getElementById("date");
+                time = document.getElementById("time");
+                price = document.getElementById("price");
+                esttime = document.getElementById("esttime");
+                console.log(username);
+                var res=confirm("Confirmation\n" +
+                "\n    Name:      "+ username.value +
+                "\n    Email:     "+ email.value +
+                "\n    Service:   "+ service.value +
+                "\n    Store:     "+ store.value +
+                "\n    Expert:    "+ expert.value +
+                "\n    Date:      "+ date.value +
+                "\n    Time:      "+ time.value +
+                "\n    Price:      "+ price.value +
+                "\n    Estimate Time:      "+ esttime.value);
+
+                if (res) {
+                    feedback.className = "alert alert-success";
+                    feedback.innerHTML = "Book successfully! Thank you for booking";
+                }else{
+                    feedback.className = "alert alert-info";
+                    feedback.innerHTML = "Cancel booking";
+                }
+            };
+        </script>

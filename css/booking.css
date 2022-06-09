@@ -1,0 +1,25 @@
+.infoBlock {
+    margin-bottom: 5px !important;
+}
+
+.subInfo{
+    color:aqua;
+    text-shadow: 0 0 5px #333333;
+}
+
+.info {
+    font-weight: bold;
+    text-shadow: 0 0 5px white
+}
+
+.price {
+    display:inline-block; 
+    font-weight: bolder;
+    text-shadow: 2px 2px 10px grey;
+    color:aquamarine
+}
+
+.book{
+    width:150px;
+}
+
