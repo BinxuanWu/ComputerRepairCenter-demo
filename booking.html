@@ -99,7 +99,7 @@
                         </div>
                     </div>
 
-                    <hr width="800">
+                    <hr width="800" color="blue">
 
                     <h5 class="subInfo"> <strong> Service </strong></h5>
                     <div class="form-gourp row infoBlock">
@@ -168,7 +168,7 @@
                         </div>
                     </div>
 
-                    <hr width="1000">
+                    <hr width="1000" color="Magenta">
                     <div class="col-sm-7 d-flex justify-content-between" >
                         <h5 class="price">Cost: </h5>
                         <h5 class="price" id = "price">$ XXX.XX</h5>
@@ -267,16 +267,7 @@
                 esttime = document.getElementById("esttime");
                 console.log(username);
                 var res=confirm("Confirmation\n" +
-                "\n    Name:      "+ username.value +
-                "\n    Email:     "+ email.value +
-                "\n    Service:   "+ service.value +
-                "\n    Store:     "+ store.value +
-                "\n    Expert:    "+ expert.value +
-                "\n    Approach:    "+ approach.value +
-                "\n    Date:      "+ date.value +
-                "\n    Time:      "+ time.value +
-                "\n    Price:      "+ price.value +
-                "\n    Estimate Time:      "+ esttime.value);
+
 
                 if (res) {
                     feedback.className = "alert alert-success";
