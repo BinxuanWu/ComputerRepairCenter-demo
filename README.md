@@ -1,5 +1,2 @@
-# BinxuanWu.github.io
-
-## Binxuan Wu
-
-## 300142301
+# Seg3125 Assigment
+# Computer Repair Center
